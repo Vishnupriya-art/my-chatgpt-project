@@ -1,60 +1,122 @@
+AI Chat Application – Full Stack Project
 
-my-chatgpt-project
+This is a full-stack AI Chat Application built with a Node.js backend and React + Vite frontend, integrating advanced chat capabilities powered by an AI model.
 
-A full-stack AI chat application built using Frontend (HTML/CSS/JS) and Backend (Node.js + Express).
-This project allows users to send messages to an AI model (ChatGPT/OpenAI API) and receive intelligent responses in real time.
+The project is structured into two main parts:
 
-🚀 Features
-✅ Frontend
+Backend → Node.js, Express, Controllers, Routes
 
-Clean chat UI
+Frontend → React, Tailwind CSS, Components, Pages 
 
-Displays user and AI messages
+📁 Project Structure
+project/
+│── src/
+│   ├── config/
+│   │   └── server.config.js
+│   ├── controllers/
+│   │   ├── chatController.js
+│   │   └── sessionController.js
+│   ├── data/
+│   │   └── mockData.js
+│   ├── routes/
+│   │   ├── chatRoutes.js
+│   │   └── sessionRoutes.js
+│   ├── utils/
+│   │   └── storage.js
+│   ├── app.js
+│   └── server.js
+│
+│── .gitignore
+│── package.json
+│── README.md
+│
+│── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ChatInput.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── TableAnswer.jsx
+│   │   ├── pages/
+│   │   ├── utils/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── index.html
+│   ├── package.json
+│   ├── postcss.config.cjs
+│   ├── tailwind.config.cjs
+│   ├── vite.config.js
+│   ├── .gitignore
+│   └── README.md
 
-Loading/typing animation
-
-Responsive design
-
-✅ Backend
-
-Secure API key handling
-
-Express server to handle /chat requests
-
-Connects to OpenAI API
-
-Sends AI responses back to frontend
-
-🛠️ Tech Stack
-Frontend
-
-HTML
-
-CSS
-
-JavaScript (Fetch API)
-
+⚙️ Tech Stack
 Backend
 
 Node.js
 
 Express.js
 
+REST API Architecture
+
+Controllers / Routes Pattern
+
 dotenv
 
-OpenAI API package (or fetch)
+Custom storage utilities
 
+Frontend
 
-📂 Project Structure
-my-chatgpt-project/
-│── backend/
-│   │── server.js
-│   │── package.json
-│   │── .env
-│
-│── frontend/
-│   │── index.html
-│   │── style.css
-│   │── script.js
-│
-│── README.md
+React (Vite)
+
+Tailwind CSS
+
+Component-based UI
+
+Clean Chat Interface
+
+Reusable UI components (ChatInput, Sidebar, TableAnswer)
+
+🧩 Key Files Explained
+app.js
+
+Initializes Express app and middleware.
+
+server.js
+
+Starts backend server.
+
+chatController.js
+
+Handles AI responses, message processing, and logic.
+
+sessionController.js
+
+Manages user sessions and chat history.
+
+storage.js
+
+Temporary in-memory or file-based storage utilities.
+
+mockData.js
+
+Temporary data for testing (fake responses or sessions).
+
+Frontend Components
+
+ChatInput.jsx → Input box for messages
+
+Sidebar.jsx → Left navigation / chat history
+
+TableAnswer.jsx → Shows AI-generated table-like results
+
+🚀 Future Enhancements
+
+Database integration (MongoDB / PostgreSQL)
+
+JWT-based authentication
+
+Persistent session storage
+
+Dark mode UI
+
+Voice input/chat
